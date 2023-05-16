@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.logo{
+    margin-top: 4rem;
+}
+.formLogin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding-inline: 9rem;
+    padding-block: 2.5rem;
+    border-radius: 2rem;
+}
+.formLogin h3{
+    font-size: 40px;
+    color: rgba(237, 2, 2, 0.64);
+    drop-shadow: (16px 16px 10px rgb(194, 21, 21))
+}
+.formLogin .input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-self: flex-start;
+}
