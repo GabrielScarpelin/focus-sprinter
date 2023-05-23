@@ -1,0 +1,72 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.logo{
+    margin-top: 4rem;
+}
+.formLogin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding-block: 2.5rem;
+    border-radius: 2rem;
+    padding-inline: 5rem;
+}
+.formLogin h3{
+    font-size: 40px;
+    color: rgba(237, 2, 2, 0.64);
+    drop-shadow: (16px 16px 10px rgb(194, 21, 21))
+}
+.formLogin .input{
+    display: flex;
+    flex-direction: column;
+    width: 22.5rem;
+    align-self: flex-start;
+    gap: .5rem;
+}
+.formLogin button{
+    padding-block: 1rem;
+    padding-inline: 3rem;
+    background-color: #ED0202;
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius: 200px;
+    font-size: 1.2rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+.formLogin p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+}
+.formLogin p a{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #FF0000;
+}
+.inputs{ 
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.formLogin .input label {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-left: .5rem;
+
+}
+.formLogin .input input{
+    height: 3rem;
+    border-radius: 200px;
+    background-color: rgba(203, 211, 254, 0.58);
+    border: none;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+    padding-inline: 1rem;
+
+}

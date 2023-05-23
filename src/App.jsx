@@ -1,12 +1,12 @@
-import { useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { createBrowserRouter, Router, RouterProvider } from 'react-router-dom'
 import Home from './screens/Home'
-import Login from './screens/Login'
-import Cadastro from './screens/Cadastro'
-import { AuthContext } from './AuthContext'
+import {Login, Cadastro} from './screens/LoginAndCadastro'
+import { Auth, AuthContext } from './AuthContext'
+import axios from 'axios'
 
 
 
@@ -22,7 +22,6 @@ const router = createBrowserRouter([
   {
     path: '/cadastro',
     element: <Cadastro />
-
   }
 ])
 
