@@ -34,17 +34,17 @@ function Login(){
 
 
     useEffect(()=>{
-        axios.get('http://localhost:3000/auth', {
+        axios.get('http://localhost:3001/auth', {
           headers: {
             'authorization': `${token}`
           }
         }).then((value) => {
-          if (value.status === 200 && value.data.validToken === true) location.pathname = '/home'
+          if (value.status === 200 && value.data.validToken) location.pathname = '/home'
           console.log(value)
         })
     }, [])
     async function loginAction(){
-        const returned = await axios.post("http://localhost:3000/signin", {
+        const returned = await axios.post("http://localhost:3001/signin", {
             email, senha
         })
         console.log(returned.data.Authenticate)
@@ -85,7 +85,7 @@ function Cadastro(){
     const [senha, setSenha] = useState(null)
     const [nome, setNome] = useState(null)
     useEffect(()=>{
-        axios.get('http://localhost:3000/auth', {
+        axios.get('http://localhost:3001/auth', {
           headers: {
             'authorization': `${token}`
           }
@@ -95,7 +95,7 @@ function Cadastro(){
         })
     }, [])
     async function signUp(){
-        const returned = await axios.post("http://localhost:3000/signup", {
+        const returned = await axios.post("http://localhost:3001/signup", {
             email, senha, nome
         })
         if (returned.data.created){
